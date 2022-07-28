@@ -1,4 +1,4 @@
-## Share Amazon Redshift query results as HTML EMmails using Amazon Simple Email Service (SES)
+## Share Amazon Redshift query results as HTML Emails using Amazon Simple Email Service (SES)
 
 This project is to show how you can query a Redshift table, change one of the fields from the query results to a clickable link, change the query results to HTML styles, and finally send an email to specified recipients using Amazon SES. Below steps are followed in the code to accomplish the goals.
 1.	Connect to Amazon Redshift cluster using AWS credentials. Use your own credentials for this step.
