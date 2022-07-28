@@ -18,7 +18,7 @@ To execute the program from AWS CLI follow the setup instructions in https://doc
 Finally run the Python program from your AWS CLI.
 
 ## Code 
-Check [github_redshift_query_SES.py] file for the sample python code
+Check [redshift-query-SES.py](redshift-query-SES.py) file for the sample python code
 
 ## Security
 
