@@ -9,9 +9,11 @@ This project is to show how you can query a Redshift table, change one of the fi
 6.	Convert one of the fields in the DataFrame to a clickable link using Python Lambda function
 7.	Style the DataFrame into HTML
 8.	Setup Email configurations with sender, recipient, aws-region information
-9.	Send the emails. Please check this AWS documentation before executing the program to setup Amazon SES https://docs.aws.amazon.com/ses/latest/dg/send-an-email-using-sdk-programmatically.html 
+9.	Send the emails. 
 
-To execute the program from your CLI, setup AWS CLI following the instructions in https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html 
+Please check this AWS documentation before executing the program to setup Amazon SES https://docs.aws.amazon.com/ses/latest/dg/send-an-email-using-sdk-programmatically.html 
+
+To execute the program from AWS CLI follow the setup instructions in https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html 
 
 Finally run the Python program from your AWS CLI.
 
