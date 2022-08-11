@@ -7,7 +7,9 @@ import boto3
 from botocore.exceptions import ClientError
 from IPython.display import HTML
 
-#Connect to Redshift cluster using AWS credentials. Passing the plaintext user information is not recommended in a production code and check this document for different available options to connect to Redshift https://github.com/aws/amazon-redshift-python-driver/blob/master/tutorials/001%20-%20Connecting%20to%20Amazon%20Redshift.ipynb 
+# Connect to Redshift cluster using AWS credentials. Passing the plaintext user information is not recommended in a 
+# production code and check this document for different available options to connect to Redshift 
+# https://github.com/aws/amazon-redshift-python-driver/blob/master/tutorials/001%20-%20Connecting%20to%20Amazon%20Redshift.ipynb 
 conn = redshift_connector.connect(
             host='<redshift-host-name>',
             port= <port name e.g. 5439>,
@@ -16,7 +18,9 @@ conn = redshift_connector.connect(
             password='<Redshift user password>',
             )
 
-# Run the sample query against a sample request_table in dev database
+# Run the sample query against a sample request_table in dev database. Implement any SQL Injection Match Condition solution as needed in a 
+# production scenario. You may check this aws documentation for the same 
+# https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-sql-conditions.html 
 query = "select \
          requestid, \
          stateid, \
