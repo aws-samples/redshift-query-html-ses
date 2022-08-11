@@ -2,7 +2,7 @@
 
 This project is to show how you can query a Redshift table, change one of the fields from the query results to a clickable link, change the query results to HTML styles, and finally send an email to specified recipients using Amazon SES. Below steps are followed in the code to accomplish the goals.
 1.	Connect to Amazon Redshift cluster using AWS credentials. Use your own credentials for this step. Passing the plaintext user information is not recommended in a production code and check this document for different available options to connect to Redshift https://github.com/aws/amazon-redshift-python-driver/blob/master/tutorials/001%20-%20Connecting%20to%20Amazon%20Redshift.ipynb
-2.	Run a sample query on Redshift. Change the query based on your requirements. 
+2.	Run a sample query on Redshift. Change the query based on your requirements. Implement any SQL Injection Match Condition solution as needed in a production scenario. You may check this aws documentation for the same https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-sql-conditions.html 
 3.	Define a cursor and execute the query
 4.	Define column names Python DataFrame with the selected columns from the table. Note that one of the columns ("Age-of-Request") in the query was a calculated field 
 5.	Create a DataFrame
