@@ -7,7 +7,7 @@ import boto3
 from botocore.exceptions import ClientError
 from IPython.display import HTML
 
-#Connect to Redshift cluster using AWS credentials
+#Connect to Redshift cluster using AWS credentials. Passing the plaintext user information is not recommended in a production code and check this document for different available options to connect to Redshift https://github.com/aws/amazon-redshift-python-driver/blob/master/tutorials/001%20-%20Connecting%20to%20Amazon%20Redshift.ipynb 
 conn = redshift_connector.connect(
             host='<redshift-host-name>',
             port= <port name e.g. 5439>,
